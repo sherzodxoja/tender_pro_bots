@@ -14,13 +14,16 @@ defmodule TenderProBots.Mixfile do
 
 	def application do
 		[
-			applications: [:logger, :bots],
+			applications: [:logger, :bots, :edeliver],
 			mod: {TenderProBots, []}
 		]
 	end
 
   
 	defp deps do
-		[{:bots, git: "https://github.com/TokiTori/bots.git", branch: "master"}]
+		[
+			{:bots, git: "https://github.com/TokiTori/bots.git", branch: "master"},
+			{:edeliver, "~> 1.2.9"}
+		]
 	end
 end
