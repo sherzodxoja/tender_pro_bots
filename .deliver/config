@@ -2,11 +2,14 @@ APP="tender_pro_bots"
 
 BUILD_HOST="bot.tender.pro"
 BUILD_USER="root"
-BUILD_AT="/root/bot/prod/tender_bots"
+BUILD_AT="/root/bot/dev/tender_bots_builds"
 
 STAGING_HOSTS="bot.tender.pro"
 STAGING_USER="root"
 DELIVER_TO="/root/bot/dev/tender_bots"
+
+PRODUCTION_HOSTS="bot.tender.pro"
+PRODUCTION_USER="root"
 
 # For *Phoenix* projects, symlink prod.secret.exs to our tmp source
 pre_erlang_get_and_update_deps() {
