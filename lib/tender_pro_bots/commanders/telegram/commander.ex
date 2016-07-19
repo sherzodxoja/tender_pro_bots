@@ -21,6 +21,8 @@ defmodule TenderProBots.Commanders.Telegram.Commander do
 					"/search3"->
 						search_result = search3(args, :new)
 						{:send_message, Map.put(search_result, :chat_id, chat_id)}
+					"товар"->
+						{:send_message, %{text: "not found yet", chat_id: chat_id}}
 					c->
 						{:send_message, %{text: "Unknown command: #{c}. Use /help and select proper command", chat_id: chat_id}}
 				end
